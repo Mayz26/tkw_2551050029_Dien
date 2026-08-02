@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import-variant dark (&:where(.dark, .dark *));
+@theme {
+    --color-brand-50: #eff6ff;
+    --color-brand-100: #dbeafe;
+    --color-brand-600: #2563eb;
+    --color-brand-700: #1d4ed8;
+    --color-brand-900: #1e3a8a;
+    --color-accent-300: #5eead4;
+    --color-accent-400: #2dd4bf;
+    --color-accent-500: #14b8a6;
+    --color-ink: #111827;
+    --color-muted: #6b7280;
+    --color-line: #e5e7eb;
+    --color-surface: #f9fafb;
+    --font-display: "Inter", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-weight-display: 600;
+    --font-weight-body: 400;
+    --text-h1: 3rem;       /* 48px */
+    --text-h2: 2.25rem;    /* 36px */
+    --text-h3: 1.875rem;   /* 30px */
+    --text-body: 1rem;     /* 16px */
+    --text-small: 0.875rem;/* 14px */
+    --radius-card: 0.875rem; /* 14px */
+    --radius-pill: 999px;
+    --section-padding-y: 6rem; /* py-24 = 96px */
+}
+@layer components{
+    .section {
+        @apply mx-auto max-w-7xl px-6 py-24;
+    }
+    .btn{
+        @apply inline-flex items-center justify-center rounded-pill px-6 py-3 font-semibold transition duration-200;
+    }
+    .btn-primary{
+        @apply bg-brand-600 text-white hover:bg-brand-700;
+    }
+    .btn-outline{
+        @apply border border-line bg-white text-ink hover:bg-brand-50;
+    }
+}
