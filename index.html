@@ -10,27 +10,41 @@
     <title>SaaS Trọ Tinh Gọn</title>
 </head>
 <body>
-    <header>
-        <nav class="section flex items-center justify-between">
-            <a href="/" class="font-display text-2xl font-bold text-brand-600">Trọ tinh gọn</a>
-            <ul class="hidden gap-8 md:flex">
-                <li><a href="#features">Tính năng</a></li>
-                <li><a href="#pricing">Bảng giá</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-            <div class="flex items-center gap-4">
-                <a href="#">Đăng nhập</a>
-                <a href="#" class="btn btn-primary">Dùng thử miễn phí</a>
+    <header class="border-b border-line">
+        <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4" aria-label="Điều hướng chính">
+            <a href="/" class="font-display text-xl font-bold text-brand-600">
+                Trọ Tinh Gọn
+            </a>
+            <div class="hidden items-center gap-8 lg:flex">
+                <a href="#features" class="text-sm text-muted hover:text-brand-600">
+                    Tính năng
+                </a>
+                <a href="#pricing" class="text-sm text-muted hover:text-brand-600">
+                    Bảng giá
+                </a>
+                <a href="#faq" class="text-sm text-muted hover:text-brand-600">
+                    FAQ
+                </a>
+                <a
+                    href="/register"
+                    class="btn btn-primary">
+                    Đăng ký
+                </a>
             </div>
+            <button type="button" class="grid h-10 w-10 place-items-center rounded-lg border border-line text-ink lg:hidden" aria-label="Mở menu">
+                <svg aria-hidden="true" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
         </nav>
     </header>
     <main id="main">
-        <section aria-labelledby="hero-title" class="section grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <section aria-labelledby="hero-title" class="section grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div>
             <p class="text-sm font-semibold text-brand-600">
                 SaaS quản lý nhà trọ
             </p>
-            <h1 id="hero-title" class="mt-4 font-display text-4xl font-extrabold leading-tight tracking-tight text-ink sm:text-5xl lg:text-6xl">
+            <h1 id="hero-title" class="font-display text-4xl font-extrabold leading-tight tracking-tight text-ink sm:text-5xl lg:text-6xl">
                 Quản lý nhà trọ
                 <span class="text-brand-600">
                     đơn giản hơn
@@ -62,7 +76,7 @@
             <h2 id="logo-title" class="text-center text-sm font-medium text-muted">
                 Được tin dùng bởi hơn 2.000 chủ trọ trên toàn quốc
             </h2>
-            <ul class="mt-10 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+            <ul class="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 sm:gap-x-12">
                 <li>
                     <img src="./assets/img/google.svg" alt="Google">
                 </li>
