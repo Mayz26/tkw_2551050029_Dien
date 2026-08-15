@@ -53,7 +53,7 @@
     }
 
     .card {
-        @apply	rounded-card	border	border-line	bg-surface	p-6 dark:border-line-invert	dark:bg-surface-dark-alt;
+        @apply	rounded-card	border	border-line	bg-surface	p-6	bg-surface;
     }
 
     .badge {
