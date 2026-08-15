@@ -26,17 +26,24 @@
     --radius-pill: 999px;
     --section-padding-y: 6rem; /* py-24 = 96px */
 }
-@layer components{
+@layer components {
     .section {
-        @apply mx-auto max-w-7xl px-6 py-24;
+        @apply mx-auto w-full max-w-6xl px-5 py-24;
     }
-    .btn{
-        @apply inline-flex items-center justify-center rounded-pill px-6 py-3 font-semibold transition duration-200;
+
+    .btn {
+        @apply inline-flex items-center justify-center gap-2 rounded-pill px-5 py-2.5 text-sm font-semibold transition-colors;
     }
-    .btn-primary{
+
+    .btn-primary {
         @apply bg-brand-600 text-white hover:bg-brand-700;
     }
-    .btn-outline{
-        @apply border border-line bg-white text-ink hover:bg-brand-50;
+
+    .btn-outline {
+        @apply border border-line text-ink hover:bg-brand-50;
+    }
+
+    .card {
+        @apply rounded-xl border border-line bg-white p-6;
     }
 }
