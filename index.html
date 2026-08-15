@@ -26,7 +26,7 @@
             </ul>
             <div class="flex items-center gap-4">
                 <a href="#">Đăng nhập</a>
-                <a hreft="#" class="btn btn-primary">Dùng thử miễn phí</a>
+                <a href="#" class="btn btn-primary">Dùng thử miễn phí</a>
             </div>
         </nav>
     </header>
@@ -41,101 +41,384 @@
                 </div>
             </div>
         </section>
-        <section aria-labelledby="logo-title">
-            <h2 id="logo-title">Được tin dùng bởi</h2>
-            <ul>
-                <li>Logo 1</li>
-                <li>Logo 2</li>
-                <li>Logo 3</li>
-                <li>Logo 4</li>
-                <li>Logo 5</li>
-            </ul>
-        </section>
-        <section id="features" aria-labelledby="features-title">
-            <h2 id="features-title">Tính năng nổi bật</h2>
-            <ul>
+        <section aria-labelledby="logo-title" class="section">
+            <h2 id="logo-title" class="text-center text-sm font-medium text-muted">
+                Được tin dùng bởi hơn 2.000 chủ trọ trên toàn quốc
+            </h2>
+            <ul class="mt-10 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
                 <li>
-                    <h3>Quản lý phòng</h3>
-                    <p>Theo dõi trạng thái từng phòng</p>
+                    <img src="./assets/img/google.svg" alt="Google">
                 </li>
                 <li>
-                    <h3>Quản lý hợp đồng</h3>
-                    <p>Lưu trữ hợp đồng điện tử</p>
+                    <img src="./assets/img/microsoft.svg" alt="Microsoft">
                 </li>
                 <li>
-                    <h3>Thu tiền</h3>
-                    <p>Tự động tạo hóa đơn hàng tháng</p>
+                    <img src="./assets/img/airbnb.svg" alt="Airbnb">
+                </li>
+                <li>
+                    <img src="./assets/img/spotify.svg" alt="Spotify">
+                </li>
+                <li>
+                    <img src="./assets/img/slack.svg" alt="Slack">
                 </li>
             </ul>
         </section>
-        <section aria-labelledby="stats-title">
-            <h2 id="stats-title">Thống kê</h2>
-            <ul>
-                <li>
-                    <p>2000+</p>
-                    <p>Chủ trọ đang sử dụng</p>
+        <section id="features" aria-labelledby="features-title" class="section">
+            <div class="max-w-2xl">
+                <h2 id="features-title" class="font-display text-3xl font-bold text-ink lg:text-4xl">
+                    Mọi công việc quản lý nhà trọ
+                    trong một ứng dụng
+                </h2>
+                <p class="mt-4 text-muted">
+                    Từ quản lý phòng đến thu tiền,
+                    mọi thao tác đều được tập trung
+                    trên một nền tảng đơn giản.
+                </p>
+            </div>
+            <ul class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <li class="card">
+                    <span class="grid h-11 w-11 place-items-center rounded-lg bg-brand-50 text-brand-600">
+                        <svg class="h-6 w-6" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M5 10v10h14V10M7 10V6h10v4"/>
+                        </svg>
+                    </span>
+                    <h3 class="mt-5 text-lg font-bold text-ink">
+                        Quản lý phòng
+                    </h3>
+                    <p class="mt-2 text-muted">
+                        Theo dõi phòng trống, phòng đang thuê
+                        và trạng thái từng phòng theo thời gian thực.
+                    </p>
                 </li>
-                <li>
-                    <p>30000+</p>
-                    <p>Phòng được quản lý</p>
+                <li class="card">
+                    <span class="grid h-11 w-11 place-items-center rounded-lg bg-brand-50 text-brand-600">
+                        <svg class="h-6 w-6" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z"/>
+                        </svg>
+                    </span>
+                    <h3 class="mt-5 text-lg font-bold text-ink">
+                        Quản lý hợp đồng
+                    </h3>
+                    <p class="mt-2 text-muted">
+                        Lưu trữ hợp đồng điện tử,
+                        theo dõi thời hạn và nhắc lịch gia hạn.
+                    </p>
                 </li>
-                <li>
-                    <p>99.9%</p>
-                    <p>Thời gian hoạt động</p>
-                </li>
-            </ul>
-        </section>
-        <section aria-labelledby="testimonial-title">
-            <h2 id="testimonial-title">Khách hàng nói gì</h2>
-            <ul>
-                <li>
-                    <p>"Dịch vụ rất tốt, giúp tôi quản lý trọ dễ dàng hơn."</p>
-                    <p>- Nguyễn Văn A</p>
-                </li>
-                <li>
-                    <p>"Giao diện thân thiện, dễ sử dụng. Rất hài lòng!"</p>
-                    <p>- Trần Thị B</p>
-                </li>
-            </ul>
-        </section>
-        <section id="pricing" aria-labelledby="pricing-title">
-            <h2 id="pricing-title">Bảng giá</h2>
-            <ul>
-                <li>
-                    <h3>Gói cơ bản</h3>
-                    <p>Miễn phí</p>
-                </li>
-                <li>
-                    <h3>Gói nâng cao</h3>
-                    <p>$9.99/tháng</p>
-                </li>
-                <li>
-                    <h3>Gói doanh nghiệp</h3>
-                    <p>$29.99/tháng</p>
-                </li>
-            </ul>
-        </section>
-        <section id="faq" aria-labelledby="faq-title">
-            <h2 id="faq-title">Câu hỏi thường gặp</h2>
-            <ul>
-                <li>
-                    <h3>Làm thế nào để bắt đầu?</h3>
-                    <p>Chỉ cần đăng ký tài khoản và bắt đầu thêm phòng của bạn.</p>
-                </li>
-                <li>
-                    <h3>Có hỗ trợ khách hàng không?</h3>
-                    <p>Chúng tôi cung cấp hỗ trợ qua email và điện thoại.</p>
+                <li class="card">
+                    <span class="grid h-11 w-11 place-items-center rounded-lg bg-brand-50 text-brand-600">
+                        <svg class="h-6 w-6" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.5-1.5-4-.5-4 1.5S10.5 12 12 12s4 .5 4 2.5-2.5 3-4 1.5m0-10V5m0 14v-2"/>
+                        </svg>
+                    </span>
+                    <h3 class="mt-5 text-lg font-bold text-ink">
+                        Thu tiền tự động
+                    </h3>
+                    <p class="mt-2 text-muted">
+                        Tạo hóa đơn tiền phòng, điện nước
+                        và nhắc khách thanh toán đúng hạn.
+                    </p>
                 </li>
             </ul>
         </section>
-        <section aria-labelledby="cta-title">
-            <h2 id="cta-title">Bắt đầu quản lý nhà trọ ngay hôm nay</h2>
-            <a href="#">Đăng kí miễn phí</a>
+        <section aria-labelledby="how-title" class="section">
+            <div class="max-w-2xl">
+                <h2 id="how-title" class="font-display text-3xl font-bold text-ink lg:text-4xl">
+                    Quản lý nhà trọ chỉ với 3 bước
+                </h2>
+                <p class="mt-4 text-muted">
+                    Bắt đầu nhanh chóng mà không cần cài đặt phần mềm.
+                </p>
+            </div>
+            <ol class="mt-14 grid gap-6 md:grid-cols-3">
+                <li class="card">
+                    <span class="font-display text-4xl font-extrabold text-brand-600">
+                        01
+                    </span>
+                    <h3 class="mt-6 text-lg font-bold text-ink">
+                        Thêm khu trọ
+                    </h3>
+                    <p class="mt-2 text-muted">
+                        Nhập thông tin khu trọ và danh sách phòng
+                        bạn đang quản lý.
+                    </p>
+                </li>
+                <li class="card">
+                    <span class="font-display text-4xl font-extrabold text-brand-600">
+                        02
+                    </span>
+                    <h3 class="mt-6 text-lg font-bold text-ink">
+                        Thêm khách thuê
+                    </h3>
+                    <p class="mt-2 text-muted">
+                        Tạo hồ sơ khách thuê và hợp đồng
+                        ngay trên hệ thống.
+                    </p>
+                </li>
+                <li class="card">
+                    <span class="font-display text-4xl font-extrabold text-brand-600">
+                        03
+                    </span>
+                    <h3 class="mt-6 text-lg font-bold text-ink">
+                        Theo dõi mỗi ngày
+                    </h3>
+                    <p class="mt-2 text-muted">
+                        Kiểm tra tiền phòng, điện nước,
+                        công nợ và lịch thanh toán trên một màn hình.
+                    </p>
+                </li>
+            </ol>
+        </section>
+        <section aria-labelledby="stats-title" class="section">
+            <h2 id="stats-title" class="sr-only">
+                Những con số của Trọ Tinh Gọn
+            </h2>
+            <dl class="grid divide-x divide-line sm:grid-cols-3">
+                <div class="text-center">
+                    <dt class="order-2 mt-2 text-sm text-muted">
+                        Chủ trọ đang sử dụng
+                    </dt>
+                    <dd class="font-display text-4xl font-extrabold text-brand-600">
+                        2.000+
+                    </dd>
+                </div>
+                <div class="text-center">
+                    <dt class="order-2 mt-2 text-sm text-muted">
+                        Phòng được quản lý
+                    </dt>
+                    <dd class="font-display text-4xl font-extrabold text-brand-600">
+                        30.000+
+                    </dd>
+                </div>
+                <div class="text-center">
+                    <dt class="order-2 mt-2 text-sm text-muted">
+                        Thời gian hoạt động
+                    </dt>
+                    <dd class="font-display text-4xl font-extrabold text-brand-600">
+                        99.9%
+                    </dd>
+                </div>
+            </dl>
+        </section>
+        <section aria-labelledby="testimonial-title" class="section">
+            <h2 id="testimonial-title" class="font-display text-3xl font-bold text-ink">
+                Chủ trọ nói gì về Trọ Tinh Gọn?
+            </h2>
+            <figure class="mt-10 max-w-3xl">
+                <blockquote class="text-2xl font-medium leading-relaxed text-ink">
+                    “Trước đây tối nào tôi cũng phải ngồi cộng
+                    sổ tiền phòng và điện nước. Từ khi dùng
+                    Trọ Tinh Gọn, tôi chỉ cần vài phút để kiểm tra
+                    toàn bộ nhà trọ.”
+                </blockquote>
+                <figcaption class="mt-6">
+                    <span class="font-semibold text-ink">
+                        Nguyễn Văn An
+                    </span>
+                    <cite class="block text-sm not-italic text-muted">
+                        Chủ nhà trọ, TP. Hồ Chí Minh
+                    </cite>
+                </figcaption>
+            </figure>
+        </section>
+        <section id="pricing" aria-labelledby="pricing-title" class="section">
+            <div class="max-w-2xl">
+                <h2 id="pricing-title" class="font-display text-3xl font-bold text-ink lg:text-4xl">
+                    Chọn gói phù hợp với nhà trọ của bạn
+                </h2>
+                <p class="mt-4 text-muted">
+                    Bắt đầu miễn phí và nâng cấp khi quy mô nhà trọ tăng lên.
+                </p>
+            </div>
+            <ul class="mt-14 grid items-stretch gap-6 lg:grid-cols-3">
+                <li class="card flex h-full flex-col">
+                    <h3 class="text-xl font-bold text-ink">
+                        Khởi đầu
+                    </h3>
+                    <p class="mt-4 text-3xl font-extrabold text-ink">
+                        0đ
+                        <span class="text-sm font-normal text-muted">
+                            /tháng
+                        </span>
+                    </p>
+                    <ul class="mt-8 grid gap-4 text-sm text-muted">
+                        <li>✓ Tối đa 10 phòng</li>
+                        <li>✓ Quản lý khách thuê</li>
+                        <li>✓ Quản lý hợp đồng</li>
+                        <li>✓ Hỗ trợ Email</li>
+                    </ul>
+                    <a href="/register" class="btn btn-outline mt-auto">
+                        Bắt đầu miễn phí
+                    </a>
+                </li>
+                <li class="card relative flex h-full flex-col ring-2 ring-brand-600">
+                    <span class="absolute -top-3 left-6 rounded-full bg-brand-600 px-3 py-1 text-xs font-semibold text-white">
+                        Được chọn nhiều nhất
+                    </span>
+                    <h3 class="text-xl font-bold text-ink">
+                        Chuyên nghiệp
+                    </h3>
+                    <p class="mt-4 text-3xl font-extrabold text-ink">
+                        199.000đ
+                        <span class="text-sm font-normal text-muted">
+                            /tháng
+                        </span>
+                    </p>
+                    <ul class="mt-8 grid gap-4 text-sm text-muted">
+                        <li>✓ Không giới hạn phòng</li>
+                        <li>✓ Tự động tạo hóa đơn</li>
+                        <li>✓ Thống kê doanh thu</li>
+                        <li>✓ Nhắc lịch thanh toán</li>
+                        <li>✓ Hỗ trợ ưu tiên</li>
+                    </ul>
+                    <a href="/register" class="btn btn-primary mt-auto">
+                        Dùng thử miễn phí
+                    </a>
+                </li>
+                <li class="card flex h-full flex-col">
+                    <h3 class="text-xl font-bold text-ink">
+                        Doanh nghiệp
+                    </h3>
+                    <p class="mt-4 text-3xl font-extrabold text-ink">
+                        499.000đ
+                        <span class="text-sm font-normal text-muted">
+                            /tháng
+                        </span>
+                    </p>
+                    <ul class="mt-8 grid gap-4 text-sm text-muted">
+                        <li>✓ Quản lý nhiều khu trọ</li>
+                        <li>✓ Phân quyền nhân viên</li>
+                        <li>✓ Báo cáo nâng cao</li>
+                        <li>✓ Sao lưu dữ liệu</li>
+                        <li>✓ Hỗ trợ 24/7</li>
+                    </ul>
+                    <a href="/contact" class="btn btn-outline mt-auto">
+                        Liên hệ tư vấn
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="faq" aria-labelledby="faq-title" class="section">
+            <div class="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+                <div>
+                    <h2 id="faq-title" class="font-display text-3xl font-bold text-ink">
+                        Câu hỏi thường gặp
+                    </h2>
+                    <p class="mt-4 text-muted">
+                        Những câu hỏi phổ biến trước khi bắt đầu sử dụng.
+                    </p>
+                </div>
+                <div class="grid gap-4">
+                    <details class="card">
+                        <summary class="cursor-pointer font-semibold text-ink">
+                            Có cần cài đặt phần mềm không?
+                        </summary>
+                        <p class="mt-4 text-muted">
+                            Không. Bạn chỉ cần trình duyệt hoặc điện thoại
+                            có Internet là có thể sử dụng Trọ Tinh Gọn.
+                        </p>
+                    </details>
+                    <details class="card">
+                        <summary class="cursor-pointer font-semibold text-ink">
+                            Có được dùng thử miễn phí không?
+                        </summary>
+                        <p class="mt-4 text-muted">
+                            Có. Bạn có thể dùng thử đầy đủ tính năng trong 30 ngày.
+                        </p>
+                    </details>
+                    <details class="card">
+                        <summary class="cursor-pointer font-semibold text-ink">
+                            Dữ liệu có được sao lưu không?
+                        </summary>
+                        <p class="mt-4 text-muted">
+                            Hệ thống tự động sao lưu dữ liệu mỗi ngày.
+                        </p>
+                    </details>
+                    <details class="card">
+                        <summary class="cursor-pointer font-semibold text-ink">
+                            Có quản lý nhiều khu trọ không?
+                        </summary>
+                        <p class="mt-4 text-muted">
+                            Có. Gói Doanh nghiệp hỗ trợ quản lý nhiều khu trọ
+                            trong cùng một tài khoản.
+                        </p>
+                    </details>
+                    <details class="card">
+                        <summary class="cursor-pointer font-semibold text-ink">
+                            Có nhắc khách đóng tiền tự động không?
+                        </summary>
+                        <p class="mt-4 text-muted">
+                            Có. Hệ thống có thể nhắc khách trước ngày đến hạn.
+                        </p>
+                    </details>
+                    <details class="card">
+                        <summary class="cursor-pointer font-semibold text-ink">
+                            Có thể hủy gói bất kỳ lúc nào không?
+                        </summary>
+                        <p class="mt-4 text-muted">
+                            Có. Bạn có thể thay đổi hoặc hủy gói bất kỳ lúc nào.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="cta-title" class="section">
+            <div class="rounded-2xl bg-brand-50 px-6 py-16 text-center">
+                <h2 id="cta-title" class="font-display text-3xl font-bold text-ink">
+                    Bắt đầu quản lý nhà trọ
+                    chuyên nghiệp ngay hôm nay
+                </h2>
+                <p class="mx-auto mt-4 max-w-2xl text-muted">
+                    Đăng ký miễn phí trong 30 ngày.
+                    Không cần thẻ ngân hàng.
+                </p>
+                <a href="/register" class="btn btn-primary mt-8">
+                    Đăng ký miễn phí
+                </a>
+            </div>
         </section>
     </main>
-    <footer id="contact">
-        <h2>Trọ tinh gọn</h2>
-        <p>2026 Saas Trọ Tinh Gọn. Bản quyền thuộc về Trọ Tinh Gọn.</p> 
+    <footer>
+        <div class="section grid gap-10 border-t border-line py-16 sm:grid-cols-2 lg:grid-cols-4">
+            <div>
+                <a href="/" class="font-display text-xl font-bold text-brand-600">
+                    Trọ Tinh Gọn
+                </a>
+                <p class="mt-4 text-sm leading-6 text-muted">
+                    Quản lý nhà trọ đơn giản,
+                    tiết kiệm thời gian mỗi ngày.
+                </p>
+            </div>
+            <nav aria-labelledby="footer-product">
+                <h2 id="footer-product" class="font-semibold text-ink">
+                    Sản phẩm
+                </h2>
+                <ul class="mt-4 grid gap-3 text-sm text-muted">
+                    <li><a href="#features">Tính năng</a></li>
+                    <li><a href="#pricing">Bảng giá</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <nav aria-labelledby="footer-support">
+                <h2 id="footer-support" class="font-semibold text-ink">
+                    Hỗ trợ
+                </h2>
+                <ul class="mt-4 grid gap-3 text-sm text-muted">
+                    <li><a href="#">Trung tâm hỗ trợ</a></li>
+                    <li><a href="#">Hướng dẫn sử dụng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <nav aria-labelledby="footer-contact">
+                <h2 id="footer-contact" class="font-semibold text-ink">
+                    Liên hệ
+                </h2>
+                <ul class="mt-4 grid gap-3 text-sm text-muted">
+                    <li>Email: hello@trotinhgon.vn</li>
+                    <li>Hotline: 1900 1234</li>
+                    <li>TP. Hồ Chí Minh</li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
