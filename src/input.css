@@ -12,7 +12,8 @@
     --color-ink: #111827;
     --color-muted: #6b7280;
     --color-line: #e5e7eb;
-    --color-surface: #f9fafb;
+    --color-surface: #ffffff;
+    --color-background: #ffffff;
     --font-display: "Inter", system-ui, sans-serif;
     --font-body: "Inter", system-ui, sans-serif;
     --font-weight-display: 600;
@@ -25,6 +26,14 @@
     --radius-card: 0.875rem; /* 14px */
     --radius-pill: 999px;
     --section-padding-y: 6rem; /* py-24 = 96px */
+}
+.dark {
+    --color-ink: #f9fafb;
+    --color-muted: #9ca3af;
+    --color-line: #374151;
+
+    --color-surface: #111827;
+    --color-background: #030712;
 }
 @layer components {
     .section {
@@ -44,6 +53,6 @@
     }
 
     .card {
-        @apply rounded-xl border border-line bg-white p-6;
+        @apply	rounded-card	border	border-line	bg-surface	p-6 dark:border-line-invert	dark:bg-surface-dark-alt;
     }
 }

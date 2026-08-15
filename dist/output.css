@@ -8,6 +8,9 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-gray-900: oklch(21% 0.034 264.665);
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xl: 36rem;
@@ -61,7 +64,8 @@
     --color-ink: #111827;
     --color-muted: #6b7280;
     --color-line: #e5e7eb;
-    --color-surface: #f9fafb;
+    --color-surface: #ffffff;
+    --color-background: #ffffff;
     --font-display: "Inter", system-ui, sans-serif;
     --font-body: "Inter", system-ui, sans-serif;
     --radius-card: 0.875rem;
@@ -300,6 +304,9 @@
   .h-full {
     height: 100%;
   }
+  .min-h-screen {
+    min-height: 100vh;
+  }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
@@ -378,9 +385,6 @@
   .gap-x-8 {
     column-gap: calc(var(--spacing) * 8);
   }
-  .gap-x-12 {
-    column-gap: calc(var(--spacing) * 12);
-  }
   .gap-y-6 {
     row-gap: calc(var(--spacing) * 6);
   }
@@ -431,6 +435,9 @@
   }
   .border-line {
     border-color: var(--color-line);
+  }
+  .bg-background {
+    background-color: var(--color-background);
   }
   .bg-brand-50 {
     background-color: var(--color-brand-50);
@@ -533,6 +540,12 @@
   .text-brand-600 {
     color: var(--color-brand-600);
   }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+  .text-gray-900 {
+    color: var(--color-gray-900);
+  }
   .text-ink {
     color: var(--color-ink);
   }
@@ -583,9 +596,6 @@
     }
   }
   @media (width >= 48rem) {
-    .md\:flex {
-      display: flex;
-    }
     .md\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -624,6 +634,24 @@
       line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
+  @media (prefers-color-scheme: dark) {
+    .dark\:bg-gray-900 {
+      background-color: var(--color-gray-900);
+    }
+    .dark\:text-gray-300 {
+      color: var(--color-gray-300);
+    }
+    .dark\:text-white {
+      color: var(--color-white);
+    }
+  }
+}
+.dark {
+  --color-ink: #f9fafb;
+  --color-muted: #9ca3af;
+  --color-line: #374151;
+  --color-surface: #111827;
+  --color-background: #030712;
 }
 @layer components {
   .section {
@@ -674,7 +702,7 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
     border-color: var(--color-line);
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
     padding: calc(var(--spacing) * 6);
   }
 }
