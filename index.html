@@ -3,19 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./dist/output.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
     <title>SaaS Trọ Tinh Gọn</title>
 </head>
 <body>
-    <a href="#main">
-        bỏ qua đến nội dung chính
-    </a>
     <header>
         <nav class="section flex items-center justify-between">
             <a href="/" class="font-display text-2xl font-bold text-brand-600">Trọ tinh gọn</a>
@@ -31,14 +25,37 @@
         </nav>
     </header>
     <main id="main">
-        <section aria-labelledby="hero-title" class="section grid items-center gap-16 lg:grid-cols-2">
-            <div>
-                <h1 id="hero-title" class="font-display text-5xl font-bold leading-tight text-ink lg:text-6xl">Quản lý trọ đơn giản mỗi ngày</h1>
-                <p class="mt-6 max-w-2xl text-lg leading-8 text-muted">Theo dõi phòng, hợp đồng và thanh toán trên một nền tảng duy nhất.</p>
-                <div class="mt-10 flex-col gap-4 sm:flex-row">
-                    <button class="btn btn-primary">Dùng thử miễn phí</button>
-                    <a href="#demo" class="btn btn-outline">Xem demo</a>
-                </div>
+        <section aria-labelledby="hero-title" class="section grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div>
+            <p class="text-sm font-semibold text-brand-600">
+                SaaS quản lý nhà trọ
+            </p>
+            <h1 id="hero-title" class="mt-4 font-display text-4xl font-extrabold leading-tight tracking-tight text-ink sm:text-5xl lg:text-6xl">
+                Quản lý nhà trọ
+                <span class="text-brand-600">
+                    đơn giản hơn
+                </span>
+                mỗi ngày
+            </h1>
+            <p class="mt-6 max-w-xl text-lg leading-8 text-muted">
+                Theo dõi phòng trống, khách thuê, hợp đồng,
+                hóa đơn điện nước và lịch thanh toán trên
+                một nền tảng duy nhất.
+            </p>
+        <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a href="/register" class="btn btn-primary">
+                Dùng thử miễn phí
+            </a>
+            <a href="#pricing" class="btn btn-outline">
+                Xem bảng giá
+            </a>
+        </div>
+            <p class="mt-5 text-sm text-muted">
+                ✓ Dùng thử 30 ngày · ✓ Không cần thẻ ngân hàng
+            </p>
+        </div>
+            <div class="flex justify-center lg:justify-end">
+                <img src="./assets/img/hero.png" alt="Giao diện quản lý nhà trọ Trọ Tinh Gọn" class="w-full max-w-xl">
             </div>
         </section>
         <section aria-labelledby="logo-title" class="section">
