@@ -48,11 +48,27 @@
         @apply bg-brand-600 text-white hover:bg-brand-700;
     }
 
-    .btn-outline {
-        @apply border border-line text-ink hover:bg-brand-50;
+    .btn-ghost {
+        @apply text-ink hover:bg-brand-50;
     }
 
     .card {
         @apply	rounded-card	border	border-line	bg-surface	p-6 dark:border-line-invert	dark:bg-surface-dark-alt;
+    }
+
+    .badge {
+        @apply inline-flex w-fit items-center rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-600;
+    }
+
+    .eyebrow {
+        @apply text-sm font-semibold text-brand-600;
+    }
+
+    .field-label {
+        @apply mb-2 block text-sm font-semibold text-ink;
+    }
+
+    .field-input {
+        @apply w-full rounded-lg border border-line bg-surface px-4 py-3 text-ink outline-none transition focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20;
     }
 }
