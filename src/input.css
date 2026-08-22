@@ -105,4 +105,37 @@
     .faq-answer {
         @apply mt-4 text-muted;
     }
+
+   .cong-tac {
+    @apply relative h-7 w-12 shrink-0 rounded-pill border border-line bg-line
+           transition-colors duration-200;
+  }
+  .cong-tac-num {
+    @apply absolute left-0.5 top-0.5 h-5 w-5 rounded-pill bg-surface shadow
+           transition-transform duration-200;
+  }
+  .cong-tac[aria-checked="true"] .cong-tac-num { @apply translate-x-5; }
+    
+  .pricing-card {
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            border-color 0.2s ease;
+    }
+
+    .pricing-card.is-selected {
+        border-color: var(--color-brand-600);
+        box-shadow: 0 0 0 2px var(--color-brand-600);
+        transform: translateY(-4px);
+    }
+
+    .js [data-reveal] {
+    @apply opacity-0;
+    transform: translateY(16px);
+    transition: opacity 500ms ease, transform 500ms ease;
+  }
+    .js [data-reveal].is-visible {
+        @apply opacity-100;
+        transform: none;
+    }
 }

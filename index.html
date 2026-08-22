@@ -55,7 +55,7 @@
         </div>
     </header>
     <main id="main">
-        <section aria-labelledby="hero-title" class="section grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+        <section aria-labelledby="hero-title" data-reveal class="section grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div>
             <p class="eyebrow">
                 SaaS quản lý nhà trọ
@@ -88,7 +88,7 @@
                 <img src="./assets/img/hero.png" alt="Giao diện quản lý nhà trọ Trọ Tinh Gọn" class="w-full max-w-xl">
             </div>
         </section>
-        <section aria-labelledby="logo-title" class="section">
+        <section aria-labelledby="logo-title" data-reveal class="section">
             <h2 id="logo-title" class="text-center text-sm font-medium text-muted">
                 Được tin dùng bởi hơn 2.000 chủ trọ trên toàn quốc
             </h2>
@@ -110,7 +110,7 @@
                 </li>
             </ul>
         </section>
-        <section id="features" aria-labelledby="features-title" class="section">
+        <section id="features" aria-labelledby="features-title" data-reveal class="section">
             <div class="max-w-2xl">
                 <h2 id="features-title" class="font-display text-3xl font-bold text-ink lg:text-4xl">
                     Mọi công việc quản lý nhà trọ
@@ -167,7 +167,7 @@
                 </li>
             </ul>
         </section>
-        <section id="how" aria-labelledby="how-title" class="section">
+        <section id="how" aria-labelledby="how-title" data-reveal class="section">
             <div class="max-w-2xl">
                 <h2 id="how-title" class="font-display text-3xl font-bold text-ink lg:text-4xl">
                     Quản lý nhà trọ chỉ với 3 bước
@@ -215,7 +215,7 @@
                 </li>
             </ol>
         </section>
-        <section aria-labelledby="stats-title" class="section">
+        <section aria-labelledby="stats-title" data-reveal class="section">
             <h2 id="stats-title" class="sr-only">
                 Những con số của Trọ Tinh Gọn
             </h2>
@@ -246,7 +246,7 @@
                 </div>
             </dl>
         </section>
-        <section aria-labelledby="testimonial-title" class="section">
+        <section aria-labelledby="testimonial-title" data-reveal class="section">
             <h2 id="testimonial-title" class="font-display text-3xl font-bold text-ink">
                 Chủ trọ nói gì về Trọ Tinh Gọn?
             </h2>
@@ -267,7 +267,7 @@
                 </figcaption>
             </figure>
         </section>
-        <section id="pricing" aria-labelledby="pricing-title" class="section">
+        <section id="pricing" aria-labelledby="pricing-title" data-reveal class="section">
             <div class="max-w-2xl">
                 <h2 id="pricing-title" class="font-display text-3xl font-bold text-ink lg:text-4xl">
                     Chọn gói phù hợp với nhà trọ của bạn
@@ -276,14 +276,25 @@
                     Bắt đầu miễn phí và nâng cấp khi quy mô nhà trọ tăng lên.
                 </p>
             </div>
+            <div class="mt-8 flex items-center justify-center gap-4">
+                <span id="nhan-thang" class="text-sm font-medium">Trả theo tháng</span>
+                <button type="button" id="cong-tac-gia" role="switch" aria-checked="false"
+                        aria-labelledby="nhan-thang nhan-nam"
+                        class="cong-tac aria-checked:bg-brand-600">
+                <span class="cong-tac-num" aria-hidden="true"></span>
+                </button>
+                <span id="nhan-nam" class="text-sm font-medium">
+                Trả theo năm <span class="badge ml-1">tiết kiệm hơn</span>
+                </span>
+            </div>
             <ul class="mt-14 grid items-stretch gap-6 lg:grid-cols-3">
                 <li class="card flex h-full flex-col">
                     <h3 class="text-xl font-bold text-ink">
                         Khởi đầu
                     </h3>
                     <p class="mt-4 text-3xl font-extrabold text-ink">
-                        0đ
-                        <span class="text-sm font-normal text-muted">
+                        <span data-price data-monthly="0" data-yearly="0">0đ</span> 
+                        <span data-price-unit class="text-sm font-normal text-muted">
                             /tháng
                         </span>
                     </p>
@@ -293,7 +304,7 @@
                         <li>✓ Quản lý hợp đồng</li>
                         <li>✓ Hỗ trợ Email</li>
                     </ul>
-                    <a href="./register" class="btn btn-outline mt-auto">
+                    <a href="./pricing.html" class="btn btn-outline mt-auto">
                         Bắt đầu miễn phí
                     </a>
                 </li>
@@ -305,8 +316,8 @@
                         Chuyên nghiệp
                     </h3>
                     <p class="mt-4 text-3xl font-extrabold text-ink">
-                        199.000đ
-                        <span class="text-sm font-normal text-muted">
+                        <span data-price data-monthly="199000" data-yearly="1910000">199.000đ</span>
+                        <span data-price-unit class="text-sm font-normal text-muted">
                             /tháng
                         </span>
                     </p>
@@ -317,7 +328,7 @@
                         <li>✓ Nhắc lịch thanh toán</li>
                         <li>✓ Hỗ trợ ưu tiên</li>
                     </ul>
-                    <a href="./register" class="btn btn-primary mt-auto">
+                    <a href="./pricing.html" class="btn btn-primary mt-auto">
                         Dùng thử miễn phí
                     </a>
                 </li>
@@ -326,8 +337,8 @@
                         Doanh nghiệp
                     </h3>
                     <p class="mt-4 text-3xl font-extrabold text-ink">
-                        499.000đ
-                        <span class="text-sm font-normal text-muted">
+                        <span data-price data-monthly="499000" data-yearly="4790000">499.000đ</span>
+                        <span data-price-unit class="text-sm font-normal text-muted">
                             /tháng
                         </span>
                     </p>
@@ -344,7 +355,7 @@
                 </li>
             </ul>
         </section>
-        <section id="faq" aria-labelledby="faq-title" class="section">
+        <section id="faq" aria-labelledby="faq-title" data-reveal class="section">
             <div id="cau-hoi">
                 <div class="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
                 <div>
@@ -408,7 +419,7 @@
                 </div>
             </div>
         </section>
-        <section aria-labelledby="cta-title" class="section">
+        <section aria-labelledby="cta-title" data-reveal class="section">
             <div class="rounded-2xl bg-brand-50 px-6 py-16 text-center dark:bg-gray-900">
                 <h2 id="cta-title" class="font-display text-3xl font-bold text-gray-900 dark:text-white lg:text-4xl">
                     Bắt đầu quản lý nhà trọ
