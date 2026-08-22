@@ -27,6 +27,11 @@
     --radius-pill: 999px;
     --section-padding-y: 6rem; /* py-24 = 96px */
 }
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;   /* chừa chỗ cho navbar dính */
+  }
 .dark {
     --color-ink: #f9fafb;
     --color-muted: #9ca3af;
@@ -35,6 +40,20 @@
     --color-surface: #111827;
     --color-background: #030712;
 }
+body {
+    @apply bg-surface text-ink font-body antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-display tracking-tight;
+  }
+
+ 
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-600;
+  }
+}
+
 @layer components {
     .section {
         @apply mx-auto w-full max-w-6xl px-5 py-24;
@@ -70,5 +89,13 @@
 
     .field-input {
          @apply w-full rounded-lg border border-line bg-surface px-4 py-3 text-ink outline-none transition focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20;
+    }
+}
+@layer components {
+    .to-top {
+        @apply fixed bottom-6 right-6 z-40 grid h-11 w-11 place-items-center rounded-pill border border-line bg-surface text-ink shadow-lg opacity-0 transition-opacity duration-200 pointer-events-none;
+    }
+    .to-top.is-visible { 
+        @apply pointer-events-auto opacity-100; 
     }
 }
