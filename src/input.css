@@ -211,3 +211,8 @@
     background: #333;
     }
 }
+@media (prefers-reduced-motion: reduce) {
+  .slider-track, .faq-icon, .cong-tac, .cong-tac-num, .to-top,
+  .js [data-reveal] { transition: none !important; }
+  .js [data-reveal] { opacity: 1 !important; transform: none !important; }
+}

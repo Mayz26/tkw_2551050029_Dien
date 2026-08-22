@@ -75,23 +75,21 @@ export function initNav() {
 }
 
 export function initHeaderOnScroll() {
-    const header = document.querySelector("header");
-    const sentinel = document.getElementById("nav-sentinel");
+  const header = document.querySelector('header');
+  const sentinel = document.getElementById('nav-sentinel');
+  if (!header || !sentinel) return;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const isScrolled = !entry.isIntersecting;
 
-    if (!header || !sentinel) return;
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-    
-            header.classList.remove("shadow-sm", "is-scrolled");
-        } else {
-            
-            header.classList.add("shadow-sm", "is-scrolled");
-        }
-        });
+      // Thêm hoặc xóa class dựa trên trạng thái cuộn
+      header.classList.toggle('shadow-sm', isScrolled);
+      header.classList.toggle('is-scrolled', isScrolled);
     });
+  }, {
+    rootMargin: '0px 0px 0px 0px',
+    threshold: 0
+  });
 
-   
-    observer.observe(sentinel);
+  observer.observe(sentinel);
 }
