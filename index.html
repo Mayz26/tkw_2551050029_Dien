@@ -30,6 +30,9 @@
                     Đăng ký
                 </a>
             </div>
+            <button id="theme-toggle" type="button" aria-label="Chuyển sang giao diện tối" aria-pressed="false" class="rounded-lg p-2 text-ink">
+                <span aria-hidden="true">🌙</span>
+            </button>
             <button type="button" aria-expanded="false" aria-controls="nav-mobile" class="grid h-10 w-10 place-items-center rounded-lg border border-line text-ink lg:hidden" aria-label="Mở menu">
                 <svg aria-hidden="true" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
@@ -342,7 +345,8 @@
             </ul>
         </section>
         <section id="faq" aria-labelledby="faq-title" class="section">
-            <div class="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+            <div id="cau-hoi">
+                <div class="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
                 <div>
                     <h2 id="faq-title" class="font-display text-3xl font-bold text-ink">
                         Câu hỏi thường gặp
@@ -351,57 +355,56 @@
                         Những câu hỏi phổ biến trước khi bắt đầu sử dụng.
                     </p>
                 </div>
+            </div>
                 <div class="grid gap-4">
-                    <details class="card">
-                        <summary class="cursor-pointer font-semibold text-ink">
+                    <div class="card">
+                        <button data-faq-trigger aria-expanded="false" aria-controls="faq-p1" class="faq-question">
                             Có cần cài đặt phần mềm không?
-                        </summary>
-                        <p class="mt-4 text-muted">
-                            Không. Bạn chỉ cần trình duyệt hoặc điện thoại
-                            có Internet là có thể sử dụng Trọ Tinh Gọn.
-                        </p>
-                    </details>
-                    <details class="card">
-                        <summary class="cursor-pointer font-semibold text-ink">
+                        </button>
+                        <div id="faq-p1" class="faq-answer" hidden>
+                            Không. Bạn chỉ cần trình duyệt hoặc điện thoại có Internet là có thể sử dụng Trọ Tinh Gọn.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <button data-faq-trigger aria-expanded="false" aria-controls="faq-p2" class="faq-question">
                             Có được dùng thử miễn phí không?
-                        </summary>
-                        <p class="mt-4 text-muted">
+                        </button>
+                        <div id="faq-p2" class="faq-answer" hidden>
                             Có. Bạn có thể dùng thử đầy đủ tính năng trong 30 ngày.
-                        </p>
-                    </details>
-                    <details class="card">
-                        <summary class="cursor-pointer font-semibold text-ink">
+                        </div>
+                    </div>
+                     <div class="card">
+                        <button data-faq-trigger aria-expanded="false" aria-controls="faq-p3" class="faq-question">
                             Dữ liệu có được sao lưu không?
-                        </summary>
-                        <p class="mt-4 text-muted">
+                        </button>
+                        <div id="faq-p3" class="faq-answer" hidden>
                             Hệ thống tự động sao lưu dữ liệu mỗi ngày.
-                        </p>
-                    </details>
-                    <details class="card">
-                        <summary class="cursor-pointer font-semibold text-ink">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <button data-faq-trigger aria-expanded="false" aria-controls="faq-p4" class="faq-question">
                             Có quản lý nhiều khu trọ không?
-                        </summary>
-                        <p class="mt-4 text-muted">
-                            Có. Gói Doanh nghiệp hỗ trợ quản lý nhiều khu trọ
-                            trong cùng một tài khoản.
-                        </p>
-                    </details>
-                    <details class="card">
-                        <summary class="cursor-pointer font-semibold text-ink">
+                        </button>
+                        <div id="faq-p4" class="faq-answer" hidden>
+                            Có. Gói Doanh nghiệp hỗ trợ quản lý nhiều khu trọ trong cùng một tài khoản.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <button data-faq-trigger aria-expanded="false" aria-controls="faq-p5" class="faq-question">
                             Có nhắc khách đóng tiền tự động không?
-                        </summary>
-                        <p class="mt-4 text-muted">
+                        </button>
+                        <div id="faq-p5" class="faq-answer" hidden>
                             Có. Hệ thống có thể nhắc khách trước ngày đến hạn.
-                        </p>
-                    </details>
-                    <details class="card">
-                        <summary class="cursor-pointer font-semibold text-ink">
+                        </div>
+                    </div>
+                     <div class="card">
+                        <button data-faq-trigger aria-expanded="false" aria-controls="faq-p6" class="faq-question">
                             Có thể hủy gói bất kỳ lúc nào không?
-                        </summary>
-                        <p class="mt-4 text-muted">
+                        </button>
+                        <div id="faq-p6" class="faq-answer" hidden>
                             Có. Bạn có thể thay đổi hoặc hủy gói bất kỳ lúc nào.
-                        </p>
-                    </details>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

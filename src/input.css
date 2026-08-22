@@ -28,30 +28,30 @@
     --section-padding-y: 6rem; /* py-24 = 96px */
 }
 @layer base {
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 5rem;   /* chừa chỗ cho navbar dính */
-  }
-.dark {
-    --color-ink: #f9fafb;
-    --color-muted: #9ca3af;
-    --color-line: #374151;
-    --color-surface-alt: #1f2937;
-    --color-surface: #111827;
-    --color-background: #030712;
-}
-body {
-    @apply bg-surface text-ink font-body antialiased;
-  }
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 5rem;   /* chừa chỗ cho navbar dính */
+    }
+    .dark {
+        --color-ink: #f9fafb;
+        --color-muted: #9ca3af;
+        --color-line: #374151;
+        --color-surface-alt: #1f2937;
+        --color-surface: #111827;
+        --color-background: #030712;
+    }
+    body {
+        @apply bg-surface text-ink font-body antialiased;
+    }
 
-  h1, h2, h3 {
-    @apply font-display tracking-tight;
-  }
+    h1, h2, h3 {
+        @apply font-display tracking-tight;
+    }
 
- 
-  :focus-visible {
-    @apply outline-2 outline-offset-2 outline-brand-600;
-  }
+    
+    :focus-visible {
+        @apply outline-2 outline-offset-2 outline-brand-600;
+    }
 }
 
 @layer components {
@@ -97,5 +97,12 @@ body {
     }
     .to-top.is-visible { 
         @apply pointer-events-auto opacity-100; 
+    }
+    .faq-question{
+        @apply w-full text-left cursor-pointer font-semibold text-ink;
+    }
+
+    .faq-answer {
+        @apply mt-4 text-muted;
     }
 }
