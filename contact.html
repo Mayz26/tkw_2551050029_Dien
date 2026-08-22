@@ -12,22 +12,20 @@
 <body class="min-h-screen bg-background text-ink">
     <header class="border-b border-line">
         <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4" aria-label="Điều hướng chính">
-            <a href="/" class="font-display text-xl font-bold text-brand-600">
+            <a href="./index.html" class="font-display text-xl font-bold text-brand-600">
                 Trọ Tinh Gọn
             </a>
             <div class="hidden items-center gap-8 lg:flex">
-                <a href="#features" class="text-sm text-muted hover:text-brand-600">
+                <a href="./index.html#features" class="text-sm text-muted hover:text-brand-600">
                     Tính năng
                 </a>
-                <a href="#pricing" class="text-sm text-muted hover:text-brand-600">
+                <a href="./index.html#pricing" class="text-sm text-muted hover:text-brand-600">
                     Bảng giá
                 </a>
-                <a href="#faq" class="text-sm text-muted hover:text-brand-600">
+                <a href="./index.html#faq" class="text-sm text-muted hover:text-brand-600">
                     FAQ
                 </a>
-                <a
-                    href="/register"
-                    class="btn btn-primary">
+                <a href="./register" class="btn btn-primary">
                     Đăng ký
                 </a>
             </div>
@@ -52,7 +50,7 @@
                     hỗ trợ sẽ liên hệ với bạn.
                 </p>
             </div>
-            <form class="mt-12 max-w-2xl" action="#" method="post">
+           <form class="mt-12 max-w-2xl" action="#" method="post">
                 <div class="grid gap-6">
                     <div>
                         <label for="name" class="field-label">
@@ -70,13 +68,42 @@
                         <label for="phone" class="field-label">
                             Số điện thoại
                         </label>
-                        <input id="phone" name="phone" type="tel" autocomplete="tel" class="field-input">
+                        <input id="phone" name="phone" type="tel" autocomplete="tel" class="field-input" required>
+                    </div>
+                    <div>
+                        <label for="boarding-house" class="field-label">
+                            Tên khu trọ
+                        </label>
+                        <input id="boarding-house" name="boarding-house" type="text" placeholder="Ví dụ: Nhà trọ Minh Anh" class="field-input" required>
+                    </div>
+                    <div>
+                        <label for="rooms" class="field-label">
+                            Số lượng phòng
+                        </label>
+                        <select id="rooms" name="rooms" class="field-input" required>
+                            <option value="">
+                                Chọn số lượng phòng
+                            </option>
+                            <option value="1-10">
+                                1 - 10 phòng
+                            </option>
+                            <option value="11-30">
+                                11 - 30 phòng
+                            </option>
+                            <option value="31-50">
+                                31 - 50 phòng
+                            </option>
+                            <option value="50+">
+                                Trên 50 phòng
+                            </option>
+                        </select>
                     </div>
                     <div>
                         <label for="message" class="field-label">
                             Nội dung
                         </label>
-                        <textarea id="message" name="message" rows="6" class="field-input" required></textarea>
+                        <textarea id="message" name="message" rows="6" placeholder="Nhập nội dung bạn cần hỗ trợ..." class="field-input" required>
+                        </textarea>
                     </div>
                     <button type="submit" class="btn btn-primary w-fit">
                         Gửi liên hệ
@@ -88,7 +115,7 @@
     <footer>
         <div class="section grid gap-10 border-t border-line py-16 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-                <a href="/" class="font-display text-xl font-bold text-brand-600">
+                <a href="./index.html" class="font-display text-xl font-bold text-brand-600">
                     Trọ Tinh Gọn
                 </a>
                 <p class="mt-4 text-sm leading-6 text-muted">
@@ -101,9 +128,9 @@
                     Sản phẩm
                 </h2>
                 <ul class="mt-4 grid gap-3 text-sm text-muted">
-                    <li><a href="#features">Tính năng</a></li>
-                    <li><a href="#pricing">Bảng giá</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="./index.html#features">Tính năng</a></li>
+                    <li><a href="./index.html#pricing">Bảng giá</a></li>
+                    <li><a href="./index.html#faq">FAQ</a></li>
                 </ul>
             </nav>
             <nav aria-labelledby="footer-support">
@@ -111,9 +138,9 @@
                     Hỗ trợ
                 </h2>
                 <ul class="mt-4 grid gap-3 text-sm text-muted">
-                    <li><a href="#">Trung tâm hỗ trợ</a></li>
-                    <li><a href="#">Hướng dẫn sử dụng</a></li>
-                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="./contact.html">Trung tâm hỗ trợ</a></li>
+                    <li><a href="./index.html#how">Hướng dẫn sử dụng</a></li>
+                    <li><a href="./contact.html">Liên hệ</a></li>
                 </ul>
             </nav>
             <nav aria-labelledby="footer-contact">

@@ -280,6 +280,9 @@
   .mt-auto {
     margin-top: auto;
   }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
   .block {
     display: block;
   }
@@ -594,6 +597,9 @@
     }
   }
   @media (width >= 48rem) {
+    .md\:hidden {
+      display: none;
+    }
     .md\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -648,6 +654,7 @@
   --color-ink: #f9fafb;
   --color-muted: #9ca3af;
   --color-line: #374151;
+  --color-surface-alt: #1f2937;
   --color-surface: #111827;
   --color-background: #030712;
 }
