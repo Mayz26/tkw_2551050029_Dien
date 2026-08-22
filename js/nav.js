@@ -35,3 +35,63 @@ export function initToTop() {
         });
     });
 }
+
+export function initNav() {
+    const toggle = document.querySelector('[aria-controls="nav-mobile"]');
+    const menu = document.getElementById("nav-mobile");
+    if (!toggle || !menu) return;
+    function setOpen(open) {
+        menu.classList.toggle("hidden", !open);
+        toggle.setAttribute("aria-expanded", String(open));
+        toggle.setAttribute("aria-label", open ? "Đóng menu" : "Mở menu");
+        document.body.classList.toggle("overflow-hidden", open);
+    }
+
+    const isOpen = () => toggle.getAttribute("aria-expanded") === "true";
+
+    toggle.addEventListener("click", () => {
+    setOpen(!isOpen());
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && isOpen()) {
+        setOpen(false);
+        toggle.focus();
+        }
+    });
+
+    document.addEventListener("click", (e) => {
+        if (isOpen() && !e.target.closest("header") && !toggle.contains(e.target)) {
+        setOpen(false);
+        }
+    });
+
+    const mediaQuery = window.matchMedia("(min-width: 1024px)");
+    mediaQuery.addEventListener("change", (e) => {
+        if (e.matches && isOpen()) {
+        setOpen(false);
+        }
+    });
+}
+
+export function initHeaderOnScroll() {
+    const header = document.querySelector("header");
+    const sentinel = document.getElementById("nav-sentinel");
+
+    if (!header || !sentinel) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+    
+            header.classList.remove("shadow-sm", "is-scrolled");
+        } else {
+            
+            header.classList.add("shadow-sm", "is-scrolled");
+        }
+        });
+    });
+
+   
+    observer.observe(sentinel);
+}
